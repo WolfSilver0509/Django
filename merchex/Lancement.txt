@@ -50,6 +50,6 @@ Band.objects.all() ( résultat avec QuerySet ressemble à une list en python)
 Mettre à jour la view pour afficher les données de la base de données
 Etape 1 : Obtenir les données de la base de données dans la vue
 dans views.py de l'application rajouter la récupération des données
-A finir
+
 
 
