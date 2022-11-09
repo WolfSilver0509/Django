@@ -20,4 +20,4 @@ le charfield est un champ de texte qui peut contenir jusqu'à 255 caractères.
 class Band(models.Model):
     name = models.fields.CharField(max_length=100)
 
-class Title
+
