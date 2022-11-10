@@ -21,3 +21,5 @@ class Band(models.Model):
     name = models.fields.CharField(max_length=100)
 
 
+class Title(models.Model):
+    title = models.fields.CharField(max_length=100)

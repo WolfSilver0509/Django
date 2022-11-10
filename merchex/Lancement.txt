@@ -38,7 +38,7 @@ band = Band()
 Etape 4 : ajouter une instance de band
 band.name = "The Beatles"
 Etape 5 : sauvegarder l'instance
-band.save()
+band.save()title.save
 Etape 6 : afficher les instances de band
 band
 Etape 7 : crée une instance en une seule ligne
