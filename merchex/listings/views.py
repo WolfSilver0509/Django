@@ -26,7 +26,15 @@ def about_us(request):
     return HttpResponse('<h1>About us</h1> <p>Here is the about us page</p>')
 
 def listings(request):
-    return HttpResponse('<h1>Listings</h1> <p>Here is the listings page</p>')
+    titles = Titles.objects.all()
+    return HttpResponse(f""" <h1>Listings</h1> <p>Here is the listings page</p>
+                        <p>Mes groupes préférés sont :<p>
+        <ul>
+            <li>{titles[0].name}</li>
+            <li>{titles[1].name}</li>
+            <li>{titles[2].name}</li>
+            <li>{titles[3].name}</li>
+        </ul> """ )
 
 def contact_us(request):
     return HttpResponse('<h1>Contact us</h1> <p>Here is the contact us page</p>')
