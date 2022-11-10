@@ -9,6 +9,7 @@ La valeur de retour de la fonction est toujours un objetHttpResponse. Ce qu'il c
 """
 from django.http import HttpResponse
 from listings.models import Band
+from listings.models import Title
 
 def hello(request):
     bands = Band.objects.all()
@@ -26,14 +27,14 @@ def about_us(request):
     return HttpResponse('<h1>About us</h1> <p>Here is the about us page</p>')
 
 def listings(request):
-    titles = Titles.objects.all()
+    titles = Title.objects.all()
     return HttpResponse(f""" <h1>Listings</h1> <p>Here is the listings page</p>
                         <p>Mes groupes préférés sont :<p>
         <ul>
-            <li>{titles[0].name}</li>
-            <li>{titles[1].name}</li>
-            <li>{titles[2].name}</li>
-            <li>{titles[3].name}</li>
+            <li>{titles[0].title}</li>
+            <li>{titles[1].title}</li>
+            <li>{titles[2].title}</li>
+            <li>{titles[3].title}</li>
         </ul> """ )
 
 def contact_us(request):
