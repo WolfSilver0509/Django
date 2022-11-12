@@ -25,21 +25,12 @@ def hello(request):
 #             <li>{bands[2].name}</li>
 #         </ul>
 # """)
-
-
 def about_us(request):
-    return HttpResponse('<h1>About us</h1> <p>Here is the about us page</p>')
+    return render(request, 'listings/about_us.html')
 
 def listings(request):
     titles = Title.objects.all()
-    return HttpResponse(f""" <h1>Listings</h1> <p>Here is the listings page</p>
-                        <p>Mes groupes préférés sont :<p>
-        <ul>
-            <li>{titles[0].title}</li>
-            <li>{titles[1].title}</li>
-            <li>{titles[2].title}</li>
-            <li>{titles[3].title}</li>
-        </ul> """ )
+    return render(request, 'listings/listings.html', {'titles': titles})
 
 def contact_us(request):
-    return HttpResponse('<h1>Contact us</h1> <p>Here is the contact us page</p>')
+    return render(request, 'listings/contact_us.html')
