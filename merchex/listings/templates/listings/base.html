@@ -1,0 +1,19 @@
+
+{% load static %}
+
+<html lang="fr">
+    <head>
+        <title>Merchex</title>
+        <link rel="stylesheet" href="{% static 'listings/style.css' %}" />
+</head>
+<body>
+ {% block content %}{% endblock %}
+
+<!--Dans notre HTML, nous avons ajouté une balise de gabarit Django : la balise block. Et nous l’avons fermé avec une balise endblock.-->
+
+<!--Nous avons également donné un nom à ce bloc : nous l'avons appelé content.-->
+
+<!--Nous pouvons considérer la balise block comme un espace réservé, dans lequel nous pouvons injecter du contenu ; en ce sens, il est similaire aux variables de gabarits.-->
+
+</body>
+</html>

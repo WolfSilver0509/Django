@@ -52,6 +52,30 @@ Etape 1 : Obtenir les données de la base de données dans la vue
 dans views.py de l'application rajouter la récupération des données
 Pour crée un superutilisateur pour l'interface admin de django
 python manage.py createsuperuser ( glaxer / admin ) / heloise / heloise
+Pour ajouter un gabarit dans le projet
+etape 1 créer un dossier templates dans le dossier du projet
+etape 2 créer un dossier listings dans le dossier templates
+etape 3 créer un fichier au noms de votre page dans le dossier listings
+etape 4 Dans le dossier Modéle dans listings
+etape 5 Dans notre fonction dans la views on rajoute un return
+etape 6 Un return avec un render qui prend en paramètre la requête, le nom du gabarit et un contexte
+ex: return render(request, 'listings/contact_us.html')
+Pour rassembler les gabaris dans un seul endroit afin de mettre en place le DRY (don't repeat yourself)
+Etape 1 : crée un fichier base.html dans le dossier templates
+Etape 2 : crée un block content dans le fichier base.html et ajouter extends dans les fichiers html :
+    {% extends 'base.html' %}
+    {% block content %}
+    {% endblock %}
+Etape 3 :  et le mettre dans les autres html pour importer la base html afin de ne pas la réecrire
+Pour ajouter un style CSS à une de nos page html
+Etape 1 : créer un dossier static dans le dossier du projet
+Etape 2 : créer un dossier css dans le dossier static
+Etape 3 : créer un fichier style.css dans le dossier css
+Etape 4 : ajouter le style dans le fichier style.css
+Etape 5 : ajouter le style dans le fichier base.html avec la balise link
+Etape 6 : ajouter le chargement du fichier css avec {% load static %} en haut de notre base.html
+
+
 
 
 
