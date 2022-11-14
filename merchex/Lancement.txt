@@ -23,7 +23,7 @@ création d'une 3 eme urls
 Etape 4 : Renvoyer une réponse http avec la vue
 création d'une fonction dans la vue listings qui renvoie une réponse http
 Etape 5 : Créer un modèle dans le fichier models.py de l'application
-création d'un modèle Listing
+création d'un modèle Band
 Etape 6 : Créer une migration pour le modèle
 python manage.py makemigrations
 etape 7 : Appliquer la migration
@@ -31,14 +31,14 @@ python manage.py migrate
 Enregistrer un modèle dans la base de données:
 Etape 1 : aller dans le shell de manage.py
 python manage.py shell
-Etape 2 : importer le modèle Listing
-from listings.models import Listing
-Etape 3 : Créer un objet Listing
+Etape 2 : importer le modèle Band
+from listings.models import Band
+Etape 3 : Créer un objet Band
 band = Band()
 Etape 4 : ajouter une instance de band
 band.name = "The Beatles"
 Etape 5 : sauvegarder l'instance
-band.save()title.save
+band.save()
 Etape 6 : afficher les instances de band
 band
 Etape 7 : crée une instance en une seule ligne
@@ -51,7 +51,7 @@ Mettre à jour la view pour afficher les données de la base de données
 Etape 1 : Obtenir les données de la base de données dans la vue
 dans views.py de l'application rajouter la récupération des données
 Pour crée un superutilisateur pour l'interface admin de django
-python manage.py createsuperuser ( glaxer / admin ) / heloise / heloise
+python manage.py createsuperuser ( glaxer / admin ) / heloise / heloise ( Nom / pass / mail@mail.com)
 Pour ajouter un gabarit dans le projet
 etape 1 créer un dossier templates dans le dossier du projet
 etape 2 créer un dossier listings dans le dossier templates

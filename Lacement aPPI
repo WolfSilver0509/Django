@@ -1,0 +1,5 @@
+Pour lancer l'application
+Il faut démarrer l'environnement virtuel
+envVirtuel/Scripts/activate
+puis lancer l'application
+python manage.py runserver

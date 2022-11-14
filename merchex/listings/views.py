@@ -13,7 +13,7 @@ from listings.models import Title
 
 from django.shortcuts import render
 
-def hello():
+def hello(request):
     bands = Band.objects.all()
     return render(request, 'listings/hello.html', {'bands': bands})
 #     return HttpResponse(f"""
