@@ -52,6 +52,8 @@ Etape 1 : Obtenir les données de la base de données dans la vue
 dans views.py de l'application rajouter la récupération des données
 Pour crée un superutilisateur pour l'interface admin de django
 python manage.py createsuperuser ( glaxer / admin ) / heloise / heloise ( Nom / pass / mail@mail.com)
+
+
 Pour ajouter un gabarit dans le projet
 etape 1 créer un dossier templates dans le dossier du projet
 etape 2 créer un dossier listings dans le dossier templates
