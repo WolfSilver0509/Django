@@ -15,7 +15,7 @@ i) Chaque attribut doit avoir un nom de champ de modèle qui ne soit pas un mot-
 
 charfield : https://docs.djangoproject.com/en/4.1/ref/models/fields/#django.db.models.CharField
 le charfield est un champ de texte qui peut contenir jusqu'à 255 caractères.
-commentaire
+commentaire rajout
 """
 class Band(models.Model):
 
